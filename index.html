@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label>UserName:-</label>
+        <input type="text" id="name"/></br></br>
+        <label>Password:-</label>
+        <input type="text" id="password" /></br></br>
+        <button onclick="submit()">Submit</button>
+        <h1 id="title"></h1>
+
+    <script >
+        let user = "kishan";
+            let pass = 2011;
+            
+            function submit() {
+                let name = document.getElementById("name").value;
+                let password = document.getElementById("password").value;
+
+                if (name == user) {
+                    if (password == pass) {
+                        document.getElementById("title").innerHTML ="login successful";
+                        document.getElementById("title").style.color = "green";
+                    }
+                    else{
+                        document.getElementById("title").innerHTML ="Enter valid password";
+                        document.getElementById("title").style.color = "red";
+                    }
+                }
+                else {
+                    document.getElementById("title").innerHTML ="Enter valid username";
+                    document.getElementById("title").style.color = "red";
+                }
+            }
+    </script>
+</body>
+</html>
