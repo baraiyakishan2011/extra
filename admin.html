@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let a_id = "kishan";
+        let a_pass = "456";
+        let a_role = "admin";
+
+        let u_id = "baraiya";
+        let u_pass = "123";
+        let u_role = "user";
+
+        let i_id = prompt("Enter id ");
+        let i_pass = prompt("Enter password ");
+        let i_role = prompt("Enter role ");
+
+        if (a_id === i_id && a_pass === i_pass && a_role === i_role) {
+            console.log("admin login");
+            let prod = prompt("enter product ")
+            console.log(prod);
+        } else if (i_id === u_id && i_pass === u_pass && i_role === u_role) {
+            console.log("user login");
+            console.log("hello user");
+        }
+        else {
+            console.log("enter valid details");
+        }
+
+    </script>
+
+</body>
+
+</html>
